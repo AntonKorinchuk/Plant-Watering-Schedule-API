@@ -18,12 +18,9 @@ class PlantViewSet(viewsets.ModelViewSet):
     @action(detail=True, methods=["post"])
     def mark_as_watered(self, request, pk=None):
         plant = self.get_object()
-        plant.last_watered_date = timezone.now()
+        plant.last_watered_date = timezone.now().date()
         plant.save()
         return Response(
-            {
-                "status": "plant watered",
-                "last_watered_date": plant.last_watered_date
-            },
-            status=status.HTTP_200_OK
+            {"status": "plant watered", "last_watered_date": plant.last_watered_date},
+            status=status.HTTP_200_OK,
         )
