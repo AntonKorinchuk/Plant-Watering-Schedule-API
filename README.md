@@ -9,7 +9,7 @@ Follow these steps to set up the project locally:
 Clone the repository and switch to the project directory:
 ```shell
 git clone https://github.com/AntonKorinchuk/Plant-Watering-Schedule-API.git
-cd plant_watering_schedule_api
+cd Plant-Watering-Schedule-API
 ```
 
 Create a virtual environment:
