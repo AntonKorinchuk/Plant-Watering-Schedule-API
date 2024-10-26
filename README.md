@@ -8,7 +8,7 @@ Follow these steps to set up the project locally:
 
 Clone the repository and switch to the project directory:
 ```shell
-https://github.com/AntonKorinchuk/Plant-Watering-Schedule-API.git
+git clone https://github.com/AntonKorinchuk/Plant-Watering-Schedule-API.git
 cd plant_watering_schedule_api
 ```
 
